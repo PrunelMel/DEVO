@@ -1,5 +1,4 @@
-'use client'
-import {useState, useEffect} from 'react';
+'use client';
 import {useTheme} from 'next-themes';
 
 export default function ThemeToggle(){
