@@ -4,13 +4,13 @@
 
     return (
       < >
-        <div className="min-h-screen ">
-          <nav className=" mt-3">
+        <div className="min-h-screen dark:bg-neutral-900">
+          <nav className=" mt-3 fixed w-full">
             
             <div className=" flex w-full">
               
               {/* logo */}
-              <div className="font-bold w-1/4 ">DEVO</div>
+              <div className="font-bold w-1/4">DEVO</div>
             
             
   
@@ -24,7 +24,7 @@
                   </li>
   
                   <li>
-                    <a href="/articles" className="hover:text-sm transition-all duration-75  ">Articles</a>
+                    <a href="/articles" className="hover:text-sm transition-all duration-75">Articles</a>
                   </li>
   
                   <li>
@@ -32,8 +32,7 @@
                   </li>
   
                 </ul>
-  
-                
+
               </div>
   
               <ThemeToggle/>

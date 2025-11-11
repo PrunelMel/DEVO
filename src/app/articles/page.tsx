@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function page () {
   return (
-    <div className="w-full h-screen bg-gray-900 text-neutral-200">
+    <div className="w-full h-screen">
 
         <div className="w-full h-1/2 flex items-center justify-center">
 
