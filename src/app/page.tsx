@@ -4,7 +4,7 @@
 
     return (
       < >
-        <div className="min-h-screen dark:bg-neutral-900">
+        <div className="min-h-screen">
           <nav className=" mt-3 fixed w-full">
             
             <div className=" flex w-full">
