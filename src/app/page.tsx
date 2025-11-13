@@ -39,7 +39,7 @@
   
               {/* suscribe button */}
               <div className="font-bold w-1/4 text-center">
-                <a href="#" className="p-1 border-2 text-neutral-200 border-neutral-200 hover:bg-white  hover:text-teal-600  hover:text-sm transition-all duration-75 rounded-md ">Suscribe</a>
+                <a href="#" className="p-1 border-2 text-neutral-200 border-neutral-200 hover:bg-white  hover:text-teal-600  hover:text-sm transition ease-in-out duration-500 rounded-md ">Suscribe</a>
               </div>
             </div>
   
@@ -59,7 +59,7 @@
                 <div>
                 </div>
   
-                <div className="font-bold text-4xl text-center">
+                <div className="font-bold text-[3em] text-center">
                   
                   LOREM IPSUM DOLOR SIT  RIO INUS COE AMET CONSECTETUR
   
@@ -73,7 +73,7 @@
                   
   
                   <div>
-                    <button className="dark:text-white dark:hover:text-black hover:bg-white hover:text-teal-600 border-2 hover:text-base transition ease-in-out duration-300 border-white text-sm p-2 font-bold  rounded-md">
+                    <button className="dark:text-white dark:hover:text-[#1cb9a6]  hover:bg-white hover:text-teal-600 border-2 hover:text-base transition ease-in-out duration-500 border-white text-sm p-2 font-bold  rounded-md">
                       Read More
                     </button>
                   </div>
