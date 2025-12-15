@@ -1,6 +1,6 @@
 ---
 title1: "Who are we?? Let's meet 🤝"
-title2: "Our Mission 💼"
+title2: ""
 title3: "Found it Useful !? Suscribe"
 date: "2025-04-15"
 slug: "aboutus"
