@@ -1,5 +1,5 @@
 import React from 'react';
-
+import CharLighter from '@/components/CharLighter';
 export default function page() {
   return (
     <div className="min-h-screen bg-white">
@@ -26,9 +26,34 @@ export default function page() {
           {/* Article Content */}
           <div className="lg:col-span-2">
             <h1 className="text-5xl font-bold text-gray-900 mb-4">Balanced Bracket</h1>
-            <p className="text-gray-500 mb-12">August 15, 2024 | by CodeMaster</p>
+            <p className="text-gray-500 mb-12">December 15, 2025 | by DEVO</p>
 
             {/* Problem Statement */}
+            <section className="bg-gray-50 rounded-lg p-8 mb-8">
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">Problem Statement</h2>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                    A bracket can be any of the following characters: <CharLighter char="("/>,<CharLighter char=")"/>,<CharLighter char='{'/>,<CharLighter char="}"/>,<CharLighter char="["/>, or <CharLighter char="]"/>.
+                    A sequence of brackets is considered balanced if:
+                </p>
+                <ul className="list-disc list-inside space-y-4 pl-7 mt-4 text-gray-700">
+                    <li className="leading-relaxed">It contains no unmatched brackets</li>
+                    <li>Each opening bracket has a corresponding closing bracket of the same type</li>
+                    <li>The brackets are properly nested</li>
+                </ul>
+                <p className="text-gray-700 leading-relaxed space-y-9 mt-4">
+                    For example :
+                    <ul className="list-disc list-inside space-y-4 pl-7 text-gray-700">
+                        <li className="leading-relaxed"><CharLighter char='{ ( ( ) ) }'/> is balanced ✅</li>
+                        <li className="leading-relaxed"><CharLighter char='{ [ ( ] ) }'/> is not balanced ❌</li>
+                        <li className="leading-relaxed"><CharLighter char='{ [ } ]'/> is not balanced ❌ </li>
+                    </ul>
+                </p>
+                <p className="text-gray-700 leading-relaxed mt-4">
+                    <span className='font-bold'>Objective</span>: Determine if a string containing brackets is balanced. Return YES if balanced, NO otherwise.
+                    Check the official <a href="https://www.hackerrank.com/challenges/balanced-brackets/problem" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">problem statement</a> for more details.
+                </p>
+            </section>
+
             <section className="bg-gray-50 rounded-lg p-8 mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Problem Statement</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
