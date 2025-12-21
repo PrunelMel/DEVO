@@ -1,62 +1,98 @@
-import React from 'react'
+import React from 'react';
 
-const page = () => {
+export default function page() {
   return (
-    <div>
-        <div className="w-full h-screen bg-stone-100 text-gray-600 font-mono">
+    <div className="min-h-screen bg-white">
+      {/* Header */}
+      {/* <header className="border-b border-gray-200 px-8 py-4">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-xl">C</span>
+            </div>
+            <span className="text-2xl font-semibold text-gray-800">CodeBlog</span>
+          </div>
+          <nav className="flex items-center gap-6">
+            <button className="text-gray-600 hover:text-gray-800">Proba Sredit ▼</button>
+            <button className="text-gray-600 hover:text-gray-800">Enclinat coduckcit ▼</button>
+            <button className="text-gray-600 hover:text-gray-800">🔔 Liga</button>
+          </nav>
+        </div>
+      </header> */}
 
-            <div className="h-10"></div>
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-8 py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Article Content */}
+          <div className="lg:col-span-2">
+            <h1 className="text-5xl font-bold text-gray-900 mb-4">Balanced Bracket</h1>
+            <p className="text-gray-500 mb-12">August 15, 2024 | by CodeMaster</p>
 
-            <header className="font-bold text-6xl text-center ">BALANCED BRACKETS</header>
-
-            <article className="mt-32 w-full flex-col p-6 flex justify-center items-center">
-
-            <section className="flex-col w-1/2 ">
-
-                <h1 className="font-bold text-4xl text-center text-[4rem]">Our Mission 💼</h1>
-                
-                <p className="text-justify m-4 text-3xl"></p>
-            
+            {/* Problem Statement */}
+            <section className="bg-gray-50 rounded-lg p-8 mb-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Problem Statement</h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                A bracket is considered to be "balanced" if the following condition met: It has no unmatched brackets. It a net brackets are properly nested.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                For example <span className="font-mono bg-white px-2 py-1 rounded">{'{(())}'}</span> is balanced, not. The problem requires if a a string of brackets is balanced.
+              </p>
             </section>
 
-            <section className="flex-col w-2/3">
-                
-                <h2 className="font-bold text-4xl text-center"></h2>
-
-                <p className="text-justify m-4 text-3xl leading-normal">Hey fellow devs! 👋
-                This blog is a space where I share the everyday life of a developer — the wins, the losses,
-                the bugs, the learning curves, and everything in between. You’ll find articles inspired by real situations, 
-                personal project experiences, and practical solutions to the recurring problems we all face at some point. 
-                The idea isn’t just to drop answers, but to walk through the thought process, the mistakes, and the technical 
-                choices behind them, so we can learn together, save time, and tackle development challenges with more clarity (and a bit more fun).
-                </p>
-
-                <section>
-
-                <h3 className="font-bold text-2xl text-center"></h3>
-
-                <p className="leading-normal text-justify m-4 text-3xl"></p>
-                        
-                </section>
+            {/* Principle and Concept */}
+            <section className="bg-gray-50 rounded-lg p-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Principle and Concept</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                The key is solving your balanced bracket is using stack data structure is stack.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                We iterate at open sg is prazing bracket: We push et a naset dhis tto the stad. {'('}']')
+              </p>
+              <ul className="space-y-4 text-gray-700">
+                <li className="leading-relaxed">
+                  • If we see opening string Whre string {'('} we stack ']' We its tach rack. I. If we stac If we ppp the stack empty or the the top the stach ied nott masl a ompaning unblanced.
+                </li>
+                <li className="leading-relaxed">
+                  • Otherwise
+                </li>
+                <li className="leading-relaxed">
+                  • After processing be entire string, if the stack elore emity, Othr else not sequence is as ungs true comes can is lessed.
+                </li>
+              </ul>
             </section>
+          </div>
 
-            </article>
+          {/* Sidebar - Related Posts */}
+          <div className="lg:col-span-1">
+            <h3 className="text-2xl font-semibold text-blue-400 mb-6">Related Posts</h3>
+            <div className="space-y-6">
+              {/* Post 1 */}
+              <div className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <div className="bg-gradient-to-br from-teal-400 to-teal-600 h-48"></div>
+                <div className="p-4">
+                  <h4 className="font-semibold text-gray-800">Stack Data Structure Explained About Credit</h4>
+                </div>
+              </div>
+
+              {/* Post 2 */}
+              <div className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <div className="bg-gradient-to-br from-rose-300 to-rose-500 h-48"></div>
+                <div className="p-4">
+                  <h4 className="font-semibold text-gray-800">Stack Data Structure Explained Bosinca</h4>
+                </div>
+              </div>
+
+              {/* Post 3 */}
+              <div className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <div className="bg-gradient-to-br from-teal-300 to-teal-500 h-48"></div>
+                <div className="p-4">
+                  <h4 className="font-semibold text-gray-800">Hackorthm Efficiency</h4>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div className="w-full h-screen bg-stone-100 text-gray-600 font-mono">
-
-            <article>
-
-            
-            
-            </article>
-            
-        
-        </div>
-
-
+      </div>
     </div>
-  )
+  );
 }
-
-export default page

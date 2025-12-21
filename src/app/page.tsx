@@ -23,12 +23,12 @@
                     <a href="#" className="hover:text-sm transition-all duration-75 " aria-current="page">Home</a>
                   </li>
   
-                  <li>
+                  <li>CodeBlogPage
                     <a href="/articles" className="hover:text-sm transition-all duration-75">Articles</a>
                   </li>
   
                   <li>
-                    <a href="/articles/aboutus" className="hover:text-sm transition-all duration-75  ">About</a>
+                    <a href="/articles/hackerRank/balancedBracket" className="hover:text-sm transition-all duration-75  ">About</a>
                   </li>
   
                 </ul>
