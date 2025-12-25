@@ -23,7 +23,7 @@
                     <a href="#" className="hover:text-sm transition-all duration-75 " aria-current="page">Home</a>
                   </li>
   
-                  <li>CodeBlogPage
+                  <li>
                     <a href="/articles" className="hover:text-sm transition-all duration-75">Articles</a>
                   </li>
   
