@@ -54,7 +54,7 @@ export default function page() {
                 </p>
             </section>
 
-            <section className="bg-gray-50 rounded-lg p-8 mb-8">
+            {/* <section className="bg-gray-50 rounded-lg p-8 mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Problem Statement</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
                 A bracket is considered to be "balanced" if the following condition met: It has no unmatched brackets. It a net brackets are properly nested.
@@ -62,18 +62,20 @@ export default function page() {
               <p className="text-gray-700 leading-relaxed">
                 For example <span className="font-mono bg-white px-2 py-1 rounded">{'{(())}'}</span> is balanced, not. The problem requires if a a string of brackets is balanced.
               </p>
-            </section>
+            </section> */}
 
             {/* Principle and Concept */}
-            <section className="bg-gray-50 rounded-lg p-8">
+            <section className="bg-gray-50 rounded-lg p-8 mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Principle and Concept</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                The key is solving your balanced bracket is using stack data structure is stack.
+                A string is balanced if for every opening bracket we encounter, we find the corresponding closing bracket.
+                The idea will be to iterate through the string and store each opening parenthesis.
+                When we encounter a closing bracket, we check if the corresponding opening bracket is present.
+
               </p>
               <p className="text-gray-700 leading-relaxed mb-6">
-                We iterate at open sg is prazing bracket: We push et a naset dhis tto the stad. {'('}']')
               </p>
-              <ul className="space-y-4 text-gray-700">
+              {/* <ul className="space-y-4 text-gray-700">
                 <li className="leading-relaxed">
                   • If we see opening string Whre string {'('} we stack ']' We its tach rack. I. If we stac If we ppp the stack empty or the the top the stach ied nott masl a ompaning unblanced.
                 </li>
@@ -83,9 +85,32 @@ export default function page() {
                 <li className="leading-relaxed">
                   • After processing be entire string, if the stack elore emity, Othr else not sequence is as ungs true comes can is lessed.
                 </li>
-              </ul>
+              </ul> */}
+            </section>
+
+            {/* Coding Section */}
+            <section className="bg-gray-50 rounded-lg p-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Coding Section</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                <span>Step 1: Iterating through the string and looking for opening brackets</span> 
+
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-6">
+              </p>
+              {/* <ul className="space-y-4 text-gray-700">
+                <li className="leading-relaxed">
+                  • If we see opening string Whre string {'('} we stack ']' We its tach rack. I. If we stac If we ppp the stack empty or the the top the stach ied nott masl a ompaning unblanced.
+                </li>
+                <li className="leading-relaxed">
+                  • Otherwise
+                </li>
+                <li className="leading-relaxed">
+                  • After processing be entire string, if the stack elore emity, Othr else not sequence is as ungs true comes can is lessed.
+                </li>
+              </ul> */}
             </section>
           </div>
+          
 
           {/* Sidebar - Related Posts */}
           <div className="lg:col-span-1">
