@@ -40,14 +40,14 @@ export default function page() {
                     <li>Each opening bracket has a corresponding closing bracket of the same type</li>
                     <li>The brackets are properly nested</li>
                 </ul>
-                <p className="text-gray-700 leading-relaxed space-y-9 mt-4">
+                <div className="text-gray-700 leading-relaxed space-y-9 mt-4">
                     For example :
                     <ul className="list-disc list-inside space-y-4 pl-7 text-gray-700">
-                        <li className="leading-relaxed"><CharLighter char='{ ( ( ) ) }'/> is balanced ✅</li>
-                        <li className="leading-relaxed"><CharLighter char='{ [ ( ] ) }'/> is not balanced ❌</li>
-                        <li className="leading-relaxed"><CharLighter char='{ [ } ]'/> is not balanced ❌ </li>
+                      <li className="leading-relaxed"><CharLighter char='{ ( ( ) ) }'/> is balanced ✅</li>
+                      <li className="leading-relaxed"><CharLighter char='{ [ ( ] ) }'/> is not balanced ❌</li>
+                      <li className="leading-relaxed"><CharLighter char='{ [ } ]'/> is not balanced ❌ </li>
                     </ul>
-                </p>
+                </div>
                 <p className="text-gray-700 leading-relaxed mt-4">
                     <span className='font-bold'>Objective</span>: Determine if a string containing brackets is balanced. Return YES if balanced, NO otherwise.
                     Check the official <a href="https://www.hackerrank.com/challenges/balanced-brackets/problem" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">problem statement</a> for more details.
@@ -91,12 +91,36 @@ export default function page() {
             {/* Coding Section */}
             <section className="bg-gray-50 rounded-lg p-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Coding Section</h2>
-              <p className="text-gray-700 leading-relaxed mb-6">
-                <span>Step 1: Iterating through the string and looking for opening brackets</span> 
+              <div className="text-gray-700 leading-relaxed mb-6">
+                <div>
+                  <span>Step 1: Iterating through the string and looking for opening brackets</span> 
+                  <img  className="mt-4" src="/hackerRank/balancedBrackets/ray-so-export.png" alt="" />
+                </div>
+                <div className="mt-4">
+                  <span>Step 2: Handling closing brackets</span>
+                  <p>Here's the important part. When stacking opening parentheses, when a closing parentheses is encountered, if the last element in the stack is the matching one then it is removed, otherwise the string is unbalanced.</p>
+                  <img  className="mt-4" src="/hackerRank/balancedBrackets/ray-so-export3.png" alt="" />
+                  <p className="mt-4">Hum, something is missing right here 🤔..</p>
+                </div>
+                <div className="mt-4">
+                  <span>Step 3: Return statement</span>
+                  <p>After processing the entire string, if the stack is empty, then the string is balanced. Otherwise, it is not.</p>
+                  <img src="/hackerRank/balancedBrackets/ray-so-export4.png" alt="" className="mt-4"/>
+                </div>
+                <div className="mt-4">
+                  <span>Step 4: Correcting the code</span>
+                   <p className="mt-4">
+                    If you tried to run this code you should have encountered a runtime error 👀...<br />
+                    Not that what we have done so far is bad. No, it's the opposite, the reasoning is logical and concise, but something is missing.
+                    You should have noticed, the problem comes from the state of the stack which can end up empty while trying to delete the last element from it.
+                    To solve the problem, just make sure that the stack is not empty before performing the operation.
+                    So this will be the final code 👇
+                  </p>
+                  <img src="/hackerRank/balancedBrackets/ray-so-export5.png" alt="" className="mt-4"/>
+                </div>
 
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-6">
-              </p>
+              </div>
+              
               {/* <ul className="space-y-4 text-gray-700">
                 <li className="leading-relaxed">
                   • If we see opening string Whre string {'('} we stack ']' We its tach rack. I. If we stac If we ppp the stack empty or the the top the stach ied nott masl a ompaning unblanced.
