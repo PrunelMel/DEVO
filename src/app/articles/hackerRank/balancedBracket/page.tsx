@@ -29,7 +29,7 @@ export default function page() {
             <p className="text-gray-500 mb-12">December 15, 2025 | by DEVO</p>
 
             {/* Problem Statement */}
-            <section className="bg-gray-50 rounded-lg p-8 mb-8">
+            <section className="bg-gray-100 rounded-lg p-8 mb-8">
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Problem Statement</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
                     A bracket can be any of the following characters: <CharLighter char="("/>,<CharLighter char=")"/>,<CharLighter char='{'/>,<CharLighter char="}"/>,<CharLighter char="["/>, or <CharLighter char="]"/>.
@@ -65,7 +65,7 @@ export default function page() {
             </section> */}
 
             {/* Principle and Concept */}
-            <section className="bg-gray-50 rounded-lg p-8 mb-8">
+            <section className="bg-gray-100 rounded-lg p-8 mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Principle and Concept</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
                 A string is balanced if for every opening bracket we encounter, we find the corresponding closing bracket.
@@ -89,13 +89,14 @@ export default function page() {
             </section>
 
             {/* Coding Section */}
-            <section className="bg-gray-50 rounded-lg p-8">
+            <section className="bg-gray-100 rounded-lg p-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Coding Section</h2>
               <div className="text-gray-700 leading-relaxed mb-6">
                 <div>
                   <span>Step 1: Iterating through the string and looking for opening brackets</span> 
                   <img  className="mt-4" src="/hackerRank/balancedBrackets/ray-so-export.png" alt="" />
                 </div>
+                <div className="border border-solid border-gray-300 mt-4"></div>
                 <div className="mt-4">
                   <span>Step 2: Handling closing brackets</span>
                   <p>Here's the important part. When stacking opening parentheses, when a closing parentheses is encountered, if the last element in the stack is the matching one then it is removed, otherwise the string is unbalanced.</p>
