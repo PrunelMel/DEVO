@@ -1,5 +1,6 @@
 import React from 'react';
 import CharLighter from '@/components/CharLighter';
+import Divider from '@/components/Divider';
 export default function page() {
   return (
     <div className="min-h-screen bg-white">
@@ -73,8 +74,7 @@ export default function page() {
                 When we encounter a closing bracket, we check if the corresponding opening bracket is present.
 
               </p>
-              <p className="text-gray-700 leading-relaxed mb-6">
-              </p>
+              <p className="text-gray-700 leading-relaxed mb-6"></p>
               {/* <ul className="space-y-4 text-gray-700">
                 <li className="leading-relaxed">
                   • If we see opening string Whre string {'('} we stack ']' We its tach rack. I. If we stac If we ppp the stack empty or the the top the stach ied nott masl a ompaning unblanced.
@@ -96,18 +96,20 @@ export default function page() {
                   <span>Step 1: Iterating through the string and looking for opening brackets</span> 
                   <img  className="mt-4" src="/hackerRank/balancedBrackets/ray-so-export.png" alt="" />
                 </div>
-                <div className="border border-solid border-gray-300 mt-4"></div>
+                <Divider/>
                 <div className="mt-4">
                   <span>Step 2: Handling closing brackets</span>
                   <p>Here's the important part. When stacking opening parentheses, when a closing parentheses is encountered, if the last element in the stack is the matching one then it is removed, otherwise the string is unbalanced.</p>
                   <img  className="mt-4" src="/hackerRank/balancedBrackets/ray-so-export3.png" alt="" />
                   <p className="mt-4">Hum, something is missing right here 🤔..</p>
                 </div>
+                <Divider/>
                 <div className="mt-4">
                   <span>Step 3: Return statement</span>
                   <p>After processing the entire string, if the stack is empty, then the string is balanced. Otherwise, it is not.</p>
                   <img src="/hackerRank/balancedBrackets/ray-so-export4.png" alt="" className="mt-4"/>
                 </div>
+                <Divider/>
                 <div className="mt-4">
                   <span>Step 4: Correcting the code</span>
                    <p className="mt-4">
