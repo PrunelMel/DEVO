@@ -1,6 +1,28 @@
 import React from 'react';
 import CharLighter from '@/components/CharLighter';
 import Divider from '@/components/Divider';
+import { TabItem, Tabs } from "flowbite-react";
+import CodeSection from '@/components/CodeSection';
+
+var codeStep1:{python:string, java:string, typescript:string} = {
+
+  python: `
+    def is_balanced(s:str):
+      
+      stack:list[str] = []
+      
+      for s_ in enumerate(s):        
+                  
+          if s_ == '[' or s_ == '(' or s_ == '{':
+              
+              stack.append(s_
+  `,
+
+  java:``,
+
+  typescript:``
+}
+
 export default function page() {
   return (
     <div className="min-h-screen bg-white">
@@ -33,8 +55,8 @@ export default function page() {
             <section className="bg-gray-100 rounded-lg p-8 mb-8">
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Problem Statement</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                    A bracket can be any of the following characters: <CharLighter char="("/>,<CharLighter char=")"/>,<CharLighter char='{'/>,<CharLighter char="}"/>,<CharLighter char="["/>, or <CharLighter char="]"/>.
-                    A sequence of brackets is considered balanced if:
+                  A bracket can be any of the following characters: <CharLighter char="("/>,<CharLighter char=")"/>,<CharLighter char='{'/>,<CharLighter char="}"/>,<CharLighter char="["/>, or <CharLighter char="]"/>.
+                  A sequence of brackets is considered balanced if:
                 </p>
                 <ul className="list-disc list-inside space-y-4 pl-7 mt-4 text-gray-700">
                     <li className="leading-relaxed">It contains no unmatched brackets</li>
@@ -94,7 +116,8 @@ export default function page() {
               <div className="text-gray-700 leading-relaxed mb-6">
                 <div>
                   <span>Step 1: Iterating through the string and looking for opening brackets</span> 
-                  <img  className="mt-4" src="/hackerRank/balancedBrackets/ray-so-export.png" alt="" />
+                  {/* <img  className="mt-4" src="/hackerRank/balancedBrackets/ray-so-export.png" alt="" /> */}
+                  <CodeSection code={codeStep1}/>
                 </div>
                 <Divider/>
                 <div className="mt-4">

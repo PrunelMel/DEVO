@@ -11,7 +11,7 @@ export default function ArticlePage() {
       <div className="w-full h-screen bg-stone-100 text-gray-600 font-mono">
 
         <div className="h-10"></div>
-
+        
         <header className="font-bold text-6xl text-center ">ABOUT US</header>
 
         <article className="mt-32 w-full flex-col p-6 flex justify-center items-center">
