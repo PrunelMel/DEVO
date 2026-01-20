@@ -6,12 +6,15 @@ import { TabItem, Tabs } from "flowbite-react";
 const CodeSection = ({code}:{code:{python:string, java:string, typescript:string}}) => {
     
     return (
-        <Tabs aria-label="Tabs with underline" variant="underline" >
-            <TabItem active title="Python">
-                This is Profile tab's associated content.
-                Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
-                control the content visibility and styling.
-                {code.python}
+        <Tabs aria-label="Tabs with underline" variant="underline" className="">
+            <TabItem active title="Python" className="font-bold">
+                
+                <code className="">
+                    <pre className="bg-neutral-800 text-amber-100 text-sm">
+                        {code.python}
+                    </pre>
+                </code>
+                
             </TabItem>
             <TabItem title="Java">
                 This is Dashboard tab's associated content.

@@ -1,21 +1,107 @@
 import React from 'react';
 import CharLighter from '@/components/CharLighter';
 import Divider from '@/components/Divider';
-import { TabItem, Tabs } from "flowbite-react";
 import CodeSection from '@/components/CodeSection';
 
 var codeStep1:{python:string, java:string, typescript:string} = {
 
   python: `
+    def is_balanced(s:str): 
+      stack:list[str] = [ ]
+      for s_ in enumerate(s):
+        if s_ == '[' or s_ == '(' or s_ == '{':
+          stack.append(s_)
+  `,
+
+  java:``,
+
+  typescript:``
+}
+
+var codeStep2:{python:string, java:string, typescript:string} = {
+
+  python: `
     def is_balanced(s:str):
-      
+    
       stack:list[str] = []
-      
+    
       for s_ in enumerate(s):        
                   
-          if s_ == '[' or s_ == '(' or s_ == '{':
+        if s_ == '[' or s_ == '(' or s_ == '{':
+            
+          stack.append(s_)
+        
+        else:
+            
+          if (s_ == '}' and stack[-1] == '{' or s_ == ')' and 
+          stack[-1] == '(' or s_ == ']' and stack[-1] == '['):
+                          
+            stack.pop()
+  `,
+
+  java:``,
+
+  typescript:``
+}
+
+var codeStep3:{python:string, java:string, typescript:string} = {
+
+  python: `
+    def is_balanced(s:str):
+    
+      stack:list[str] = []
+    
+      for s_ in enumerate(s):        
+                
+        if s_ == '[' or s_ == '(' or s_ == '{':
+            
+          stack.append(s_)
+        
+        else:
+            
+          if (s_ == '}' and stack[-1] == '{' or s_ == ')' and 
+          stack[-1] == '(' or s_ == ']' and stack[-1] == '['):
+                          
+            stack.pop()
+                  
+          else:
               
-              stack.append(s_
+            return "NO"
+            
+      return "YES" if len(stack) == 0 else "NO"
+  `,
+
+  java:``,
+
+  typescript:``
+}
+
+var codeStep4:{python:string, java:string, typescript:string} = {
+
+  python:`
+    def is_balanced(s:str):
+    
+      stack:list[str] = []
+    
+      for s_ in enumerate(s):        
+                  
+        if s_ == '[' or s_ == '(' or s_ == '{':
+            
+          stack.append(s_)
+        
+        else:
+            
+          if len(stack) != 0 and (s_ == '}' and stack[-1] == '{' or s_ == ')' and 
+          stack[-1] == '(' or s_ == ']' and stack[-1] == '['):
+                          
+            stack.pop()
+                        
+          else:
+              
+            return "NO"
+            
+      return "YES" if len(stack) == 0 else "NO"
+
   `,
 
   java:``,
@@ -120,17 +206,19 @@ export default function page() {
                   <CodeSection code={codeStep1}/>
                 </div>
                 <Divider/>
-                <div className="mt-4">
+                <div className="mt-4 overflow-x-hidden">
                   <span>Step 2: Handling closing brackets</span>
                   <p>Here's the important part. When stacking opening parentheses, when a closing parentheses is encountered, if the last element in the stack is the matching one then it is removed, otherwise the string is unbalanced.</p>
-                  <img  className="mt-4" src="/hackerRank/balancedBrackets/ray-so-export3.png" alt="" />
+                  {/* <img  className="mt-4" src="/hackerRank/balancedBrackets/ray-so-export3.png" alt="" /> */}
+                  <CodeSection code={codeStep2}/>
                   <p className="mt-4">Hum, something is missing right here 🤔..</p>
                 </div>
                 <Divider/>
                 <div className="mt-4">
                   <span>Step 3: Return statement</span>
                   <p>After processing the entire string, if the stack is empty, then the string is balanced. Otherwise, it is not.</p>
-                  <img src="/hackerRank/balancedBrackets/ray-so-export4.png" alt="" className="mt-4"/>
+                  {/* <img src="/hackerRank/balancedBrackets/ray-so-export4.png" alt="" className="mt-4"/> */}
+                  <CodeSection code={codeStep3}/>
                 </div>
                 <Divider/>
                 <div className="mt-4">
@@ -142,7 +230,8 @@ export default function page() {
                     To solve the problem, just make sure that the stack is not empty before performing the operation.
                     So this will be the final code 👇
                   </p>
-                  <img src="/hackerRank/balancedBrackets/ray-so-export5.png" alt="" className="mt-4"/>
+                  {/* <img src="/hackerRank/balancedBrackets/ray-so-export5.png" alt="" className="mt-4"/> */}
+                  <CodeSection code={codeStep4}/>
                 </div>
 
               </div>
