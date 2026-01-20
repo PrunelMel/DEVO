@@ -10,7 +10,7 @@ const CodeSection = ({code}:{code:{python:string, java:string, typescript:string
             <TabItem active title="Python" className="font-bold">
                 
                 <code className="">
-                    <pre className="bg-neutral-800 text-amber-100 text-sm">
+                    <pre className="bg-white text-gray-600 dark:bg-gray-800 dark:text-gray-200 text-sm">
                         {code.python}
                     </pre>
                 </code>
@@ -26,11 +26,11 @@ const CodeSection = ({code}:{code:{python:string, java:string, typescript:string
                 Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
                 control the content visibility and styling.
             </TabItem>
-            <TabItem title="Contacts">
+            {/* <TabItem title="Contacts">
                 This is <span className="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</span>.
                 Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
                 control the content visibility and styling.
-            </TabItem>
+            </TabItem> */}
         </Tabs>
     );
 }

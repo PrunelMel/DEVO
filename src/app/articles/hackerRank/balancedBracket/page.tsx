@@ -68,6 +68,7 @@ var codeStep3:{python:string, java:string, typescript:string} = {
               
             return "NO"
             
+        
       return "YES" if len(stack) == 0 else "NO"
   `,
 
@@ -100,6 +101,7 @@ var codeStep4:{python:string, java:string, typescript:string} = {
               
             return "NO"
             
+      
       return "YES" if len(stack) == 0 else "NO"
 
   `,

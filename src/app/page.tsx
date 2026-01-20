@@ -5,45 +5,7 @@
     return (
       < >
         <div className="min-h-screen">
-          <nav className=" mt-3 fixed w-full">
-            
-            <div className=" flex w-full">
-              
-              {/* logo */}
-              <div className="font-bold w-1/4">DEVO</div>
-            
-            
-  
-              <div className="w-1/2">
-                
-                  
-                <ul className="flex font-bold space-x-16 items-center justify-center">
-  
-                  <li>
-                    <a href="#" className="hover:text-sm transition-all duration-75 " aria-current="page">Home</a>
-                  </li>
-  
-                  <li>
-                    <a href="/articles" className="hover:text-sm transition-all duration-75">Articles</a>
-                  </li>
-  
-                  <li>
-                    <a href="/articles/hackerRank/balancedBracket" className="hover:text-sm transition-all duration-75  ">About</a>
-                  </li>
-  
-                </ul>
-
-              </div>
-  
-              <ThemeToggle/>
-  
-              {/* suscribe button */}
-              <div className="font-bold w-1/4 text-center">
-                <a href="#" className="p-1 border-2 text-neutral-200 border-neutral-200 hover:bg-white  hover:text-teal-600  hover:text-sm transition ease-in-out duration-500 rounded-md ">Suscribe</a>
-              </div>
-            </div>
-  
-          </nav>
+        
   
           <div className="h-screen">
   
