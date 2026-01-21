@@ -255,7 +255,7 @@ export default function page() {
 
           {/* Sidebar - Related Posts */}
           <div className="lg:col-span-1">
-            <h3 className="text-2xl font-semibold text-blue-400 mb-6">Related Posts</h3>
+            <h3 className="text-2xl font-semibold mb-6">Related Posts</h3>
             <div className="space-y-6">
               {/* Post 1 */}
               <div className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition-shadow">

@@ -14,7 +14,9 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --section-back: var(--color-gray-300);
+  --section-back: var(--color-gray-100);
+  --code-sec-back: var(--color-gray-200);
+  --code-sec-for: var(--foreground);
 }
 
 .dark {
@@ -22,6 +24,8 @@
   --foreground:   var(--color-zinc-100);
   --section-back: var(--color-gray-900);
   --section-for: var(--color-gray-200);
+  --code-sec-back: var(--color-slate-950);
+  --code-sec-for:
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -41,4 +45,9 @@ body {
   background: var(--section-back);
   color: var(--section-for);
 
+}
+
+.code-section{
+  background: var(--code-sec-back);
+  color: var(--code-sec-for);
 }

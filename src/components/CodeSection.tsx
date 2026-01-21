@@ -10,7 +10,7 @@ const CodeSection = ({code}:{code:{python:string, java:string, typescript:string
             <TabItem active title="Python" className="font-bold">
                 
                 <code className="">
-                    <pre className="bg-white text-gray-600 dark:bg-gray-800 dark:text-gray-200 text-sm">
+                    <pre className="code-section text-gray-600  dark:text-gray-200 text-sm">
                         {code.python}
                     </pre>
                 </code>
