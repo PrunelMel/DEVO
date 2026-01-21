@@ -113,7 +113,7 @@ var codeStep4:{python:string, java:string, typescript:string} = {
 
 export default function page() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       {/* Header */}
       {/* <header className="border-b border-gray-200 px-8 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -136,33 +136,33 @@ export default function page() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Article Content */}
           <div className="lg:col-span-2">
-            <h1 className="text-5xl font-bold text-gray-900 mb-4">Balanced Bracket</h1>
+            <h1 className="text-5xl font-bold mb-4">Balanced Bracket</h1>
             <p className="text-gray-500 mb-12">December 15, 2025 | by DEVO</p>
 
             {/* Problem Statement */}
-            <section className="bg-gray-100 rounded-lg p-8 mb-8">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Problem Statement</h2>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  A bracket can be any of the following characters: <CharLighter char="("/>,<CharLighter char=")"/>,<CharLighter char='{'/>,<CharLighter char="}"/>,<CharLighter char="["/>, or <CharLighter char="]"/>.
-                  A sequence of brackets is considered balanced if:
-                </p>
-                <ul className="list-disc list-inside space-y-4 pl-7 mt-4 text-gray-700">
-                    <li className="leading-relaxed">It contains no unmatched brackets</li>
-                    <li>Each opening bracket has a corresponding closing bracket of the same type</li>
-                    <li>The brackets are properly nested</li>
-                </ul>
-                <div className="text-gray-700 leading-relaxed space-y-9 mt-4">
-                    For example :
-                    <ul className="list-disc list-inside space-y-4 pl-7 text-gray-700">
-                      <li className="leading-relaxed"><CharLighter char='{ ( ( ) ) }'/> is balanced ✅</li>
-                      <li className="leading-relaxed"><CharLighter char='{ [ ( ] ) }'/> is not balanced ❌</li>
-                      <li className="leading-relaxed"><CharLighter char='{ [ } ]'/> is not balanced ❌ </li>
-                    </ul>
-                </div>
-                <p className="text-gray-700 leading-relaxed mt-4">
-                    <span className='font-bold'>Objective</span>: Determine if a string containing brackets is balanced. Return YES if balanced, NO otherwise.
-                    Check the official <a href="https://www.hackerrank.com/challenges/balanced-brackets/problem" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">problem statement</a> for more details.
-                </p>
+            <section className=" rounded-lg p-8 mb-8 article-section">
+              <h2 className="text-3xl font-bold mb-6">Problem Statement</h2>
+              <p className=" leading-relaxed mb-4">
+                A bracket can be any of the following characters: <CharLighter char="("/>,<CharLighter char=")"/>,<CharLighter char='{'/>,<CharLighter char="}"/>,<CharLighter char="["/>, or <CharLighter char="]"/>.
+                A sequence of brackets is considered balanced if:
+              </p>
+              <ul className="list-disc list-inside space-y-4 pl-7 mt-4">
+                  <li className="leading-relaxed">It contains no unmatched brackets</li>
+                  <li>Each opening bracket has a corresponding closing bracket of the same type</li>
+                  <li>The brackets are properly nested</li>
+              </ul>
+              <div className=" leading-relaxed space-y-9 mt-4">
+                  For example :
+                  <ul className="list-disc list-inside space-y-4 pl-7">
+                    <li className="leading-relaxed"><CharLighter char='{ ( ( ) ) }'/> is balanced ✅</li>
+                    <li className="leading-relaxed"><CharLighter char='{ [ ( ] ) }'/> is not balanced ❌</li>
+                    <li className="leading-relaxed"><CharLighter char='{ [ } ]'/> is not balanced ❌ </li>
+                  </ul>
+              </div>
+              <p className=" leading-relaxed mt-4">
+                  <span className='font-bold'>Objective</span>: Determine if a string containing brackets is balanced. Return YES if balanced, NO otherwise.
+                  Check the official <a href="https://www.hackerrank.com/challenges/balanced-brackets/problem" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">problem statement</a> for more details.
+              </p>
             </section>
 
             {/* <section className="bg-gray-50 rounded-lg p-8 mb-8">
@@ -176,15 +176,15 @@ export default function page() {
             </section> */}
 
             {/* Principle and Concept */}
-            <section className="bg-gray-100 rounded-lg p-8 mb-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Principle and Concept</h2>
-              <p className="text-gray-700 leading-relaxed mb-6">
+            <section className=" rounded-lg p-8 mb-8 article-section">
+              <h2 className="text-3xl font-bold  mb-6">Principle and Concept</h2>
+              <p className=" leading-relaxed mb-6">
                 A string is balanced if for every opening bracket we encounter, we find the corresponding closing bracket.
                 The idea will be to iterate through the string and store each opening parenthesis.
                 When we encounter a closing bracket, we check if the corresponding opening bracket is present.
 
               </p>
-              <p className="text-gray-700 leading-relaxed mb-6"></p>
+              <p className=" leading-relaxed mb-6"></p>
               {/* <ul className="space-y-4 text-gray-700">
                 <li className="leading-relaxed">
                   • If we see opening string Whre string {'('} we stack ']' We its tach rack. I. If we stac If we ppp the stack empty or the the top the stach ied nott masl a ompaning unblanced.
@@ -199,10 +199,10 @@ export default function page() {
             </section>
 
             {/* Coding Section */}
-            <section className="bg-gray-100 rounded-lg p-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Coding Section</h2>
-              <div className="text-gray-700 leading-relaxed mb-6">
-                <div>
+            <section className="article-section rounded-lg p-8">
+              <h2 className="text-3xl font-bold mb-6">Coding Section</h2>
+              <div className=" leading-relaxed mb-6">
+                <div className=''>
                   <span>Step 1: Iterating through the string and looking for opening brackets</span> 
                   {/* <img  className="mt-4" src="/hackerRank/balancedBrackets/ray-so-export.png" alt="" /> */}
                   <CodeSection code={codeStep1}/>

@@ -3,7 +3,9 @@
 @source "../../.flowbite-react/class-list.json";
 
 :root {
-  --background: var(--color-gray-50);
+  /* --background: var(--color-gray-50);
+  --foreground:var(--color-slate-800); */
+  --background:linear-gradient(135deg, #ffffff 0%,#90a1b9 50%, #45556c 100%);
   --foreground:var(--color-slate-800);
 }
 

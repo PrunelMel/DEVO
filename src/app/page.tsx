@@ -5,8 +5,7 @@
     return (
       < >
         <div className="min-h-screen">
-        
-  
+    
           <div className="h-screen">
   
             <section className="flex flex-col h-full">
