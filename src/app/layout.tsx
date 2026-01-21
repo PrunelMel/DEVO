@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import ThemeToggle from "../components/ThemeToggle";
+import Button from "../components/Button"
 import "./globals.css"
 
 const geistSans = Geist({
@@ -63,9 +64,9 @@ export default function RootLayout({
                 <ThemeToggle/>
     
                 {/* suscribe button */}
-                <div className="font-bold w-1/4 text-center">
-                  <a href="#" className="p-1 border-2 text-neutral-200 border-neutral-200 hover:bg-white  hover:text-teal-600  hover:text-sm transition ease-in-out duration-500 rounded-md ">Suscribe</a>
-                </div>
+                {/* <div className="font-bold w-1/4 text-center">
+                  <a href="#" className="p-1 border hover:bg-[var(--foreground)] hover:text-[var(--button-hover)]  duration-500 rounded-md ">Suscribe</a> 
+                </div> */}
               </div>
     
             </nav>

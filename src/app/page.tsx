@@ -1,4 +1,5 @@
-  import ThemeToggle from "@/components/ThemeToggle";
+import ThemeToggle from "@/components/ThemeToggle";
+import Button from "@/components/Button";
 
   export default  function Home() {
 
@@ -34,9 +35,7 @@
                   
   
                   <div>
-                    <button className="dark:text-white dark:hover:text-[#1cb9a6]  hover:bg-white hover:text-teal-600 border-2 hover:text-base transition ease-in-out duration-500 border-white text-sm p-2 font-bold  rounded-md">
-                      Read More
-                    </button>
+                    <Button childNode="Read More" />
                   </div>
                 
                 </div>

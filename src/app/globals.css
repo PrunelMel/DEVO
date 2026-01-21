@@ -17,6 +17,7 @@
   --section-back: var(--color-gray-100);
   --code-sec-back: var(--color-gray-200);
   --code-sec-for: var(--foreground);
+  --button-hover: var(--color-white);
 }
 
 .dark {
@@ -25,7 +26,7 @@
   --section-back: var(--color-gray-900);
   --section-for: var(--color-gray-200);
   --code-sec-back: var(--color-slate-950);
-  --code-sec-for:
+  --button-hover: var(--background)
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -50,4 +51,8 @@ body {
 .code-section{
   background: var(--code-sec-back);
   color: var(--code-sec-for);
+}
+
+.button{
+  
 }
