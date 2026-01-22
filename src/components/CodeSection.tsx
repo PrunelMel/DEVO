@@ -10,6 +10,7 @@ const CodeSection = ({code}:{code:{python:string, java:string, typescript:string
             <TabItem active title="Python" className="font-bold">
                 
                 <code className="">
+                    <div className="code-section flex justify-end w-full "><button type="button" className="text-sm w-1/12 text-center text-gray-500">Copy</button></div>
                     <pre className="code-section text-gray-600  dark:text-gray-200 text-sm">
                         {code.python}
                     </pre>

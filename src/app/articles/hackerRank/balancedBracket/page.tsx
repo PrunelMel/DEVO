@@ -254,7 +254,7 @@ export default function page() {
           
 
           {/* Sidebar - Related Posts */}
-          <div className="lg:col-span-1">
+          <div className=" ">
             <h3 className="text-2xl font-semibold mb-6">Related Posts</h3>
             <div className="space-y-6">
               {/* Post 1 */}
