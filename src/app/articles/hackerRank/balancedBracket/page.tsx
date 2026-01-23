@@ -254,7 +254,7 @@ export default function page() {
           
 
           {/* Sidebar - Related Posts */}
-          <div className=" ">
+          <div className="sticky top-0 h-screen overflow-y-hidden hover:overflow-y-auto">
             <h3 className="text-2xl font-semibold mb-6">Related Posts</h3>
             <div className="space-y-6">
               {/* Post 1 */}
