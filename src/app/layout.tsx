@@ -30,7 +30,7 @@ export default function RootLayout({
           // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
           className=" ">
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-            <nav className=" mt-3 fixed w-full">
+            <nav className="fixed top-0 h-10 bg-transparent backdrop-blur-sm w-full z-20">
               
               <div className=" flex w-full">
                 
@@ -45,15 +45,15 @@ export default function RootLayout({
                   <ul className="flex font-bold space-x-16 items-center justify-center">
     
                     <li>
-                      <a href="#" className="hover:text-sm transition-all duration-75 " aria-current="page">Home</a>
+                      <a href="#" className=" transition-all duration-75 " aria-current="page">Home</a>
                     </li>
     
                     <li>
-                      <a href="/articles" className="hover:text-sm transition-all duration-75">Articles</a>
+                      <a href="/articles" className=" transition-all duration-75">Articles</a>
                     </li>
     
                     <li>
-                      <a href="/articles/hackerRank/balancedBracket" className="hover:text-sm transition-all duration-75  ">About</a>
+                      <a href="/articles/hackerRank/balancedBracket" className=" transition-all duration-75  ">About</a>
                     </li>
     
                   </ul>

@@ -135,7 +135,7 @@ export default function page() {
       <div className="max-w-7xl mx-auto px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Article Content */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 sticky">
             <h1 className="text-5xl font-bold mb-4">Balanced Bracket</h1>
             <p className="text-gray-500 mb-12">December 15, 2025 | by DEVO</p>
 
@@ -254,14 +254,14 @@ export default function page() {
           
 
           {/* Sidebar - Related Posts */}
-          <div className="sticky top-0 h-screen overflow-y-hidden hover:overflow-y-auto">
+          <div className="sticky top-0 h-screen overflow-y-hidden hover:overflow-y-auto z-10">
             <h3 className="text-2xl font-semibold mb-6">Related Posts</h3>
             <div className="space-y-6">
               {/* Post 1 */}
-              <div className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+              <div className="article-section bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
                 <div className="bg-gradient-to-br from-teal-400 to-teal-600 h-48"></div>
                 <div className="p-4">
-                  <h4 className="font-semibold text-gray-800">Stack Data Structure Explained About Credit</h4>
+                  <h4 className="font-semibold">Stack Data Structure Explained About Credit</h4>
                 </div>
               </div>
 
