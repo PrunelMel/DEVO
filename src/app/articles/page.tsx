@@ -1,4 +1,17 @@
 import Image from "next/image";
+import {opendir} from 'node:fs/promises';
+
+
+var files = await opendir('./src/app/articles');
+        
+var articles:Array<string> = []
+
+for await (const dirent of files){
+
+  if(dirent.isDirectory()){
+    articles.push(dirent.name)
+  }
+}
 
 export function page () {
   return (
@@ -10,9 +23,12 @@ export function page () {
 
           <div className="flex-col ">
 
-              <div className="h-8"></div>
+              <div className="h-1/12">LATEST ARTICLES</div>
 
-              <Image className="border-2  border-neutral-400 rounded-full" src={'/bored.gif'} width={150 } height={150} alt="Nothing Yet"/>
+              <div className="h-8/12">
+                {articles.map((article) => <div className="">{article}</div>)}
+              </div>
+
 
               <div className="h-16"></div>
 
