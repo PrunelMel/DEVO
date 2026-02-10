@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "DEVO's BLOG",
   description: "...",
 };
-  
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,52 +26,34 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-        <body
-          // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-          className=" ">
-          <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-            <nav className="fixed top-0 h-10 bg-transparent backdrop-blur-sm w-full z-20">
-              
-              <div className=" flex w-full">
-                
-                {/* logo */}
-                <div className="font-bold w-1/4">DEVO</div>
-              
-              
-    
-                <div className="w-1/2">
-                  
-                    
-                  <ul className="flex font-bold space-x-16 items-center justify-center">
-    
-                    <li>
-                      <a href="#" className=" transition-all duration-75 " aria-current="page">Home</a>
-                    </li>
-    
-                    <li>
-                      <a href="/articles" className=" transition-all duration-75">Articles</a>
-                    </li>
-    
-                    <li>
-                      <a href="/articles/hackerRank/balancedBracket" className=" transition-all duration-75  ">About</a>
-                    </li>
-    
-                  </ul>
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"></link>
 
-                </div>
-    
-                <ThemeToggle/>
-    
-                {/* suscribe button */}
-                {/* <div className="font-bold w-1/4 text-center">
-                  <a href="#" className="p-1 border hover:bg-[var(--foreground)] hover:text-[var(--button-hover)]  duration-500 rounded-md ">Suscribe</a> 
-                </div> */}
-              </div>
-    
+      </head>
+      <body
+        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className="min-h-screen overflow-hidden relative">
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          <header className="fixed h-16 top-0 left-0 right-0 px-16 py-8 flex justify-between items-center z-[100] md:px-8 backdrop-blur-sm">
+            <div className="font-syne text-3xl font-extrabold text-brand-dark tracking-wider">
+              DEVO
+            </div>
+            <nav className="flex gap-12 items-center md:gap-6">
+              <a href="#home" className="nav-link font-syne font-bold text-brand-dark text-lg transition-all duration-300 relative hover:text-brand-dark md:text-base">
+                Home
+              </a>
+              <a href="#articles" className="nav-link font-syne font-bold text-brand-dark text-lg transition-all duration-300 relative hover:text-brand-dark md:text-base">
+                Articles
+              </a>
+              <a href="#about" className="nav-link font-syne font-bold text-brand-dark text-lg transition-all duration-300 relative hover:text-brand-dark md:text-base">
+                About
+              </a>
+              <ThemeToggle/>
             </nav>
-            {children}
-          </ThemeProvider>
-        </body>
+          </header>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
-}
+}  

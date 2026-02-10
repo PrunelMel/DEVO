@@ -1,6 +1,6 @@
 import Image from "next/image";
 import {opendir} from 'node:fs/promises';
-import Article from "@/components/Article";
+import ArticleView from "@/components/Article";
 
 
 var files = await opendir('./src/app/articles');
@@ -24,8 +24,8 @@ export function page () {
 
         <div className="text-4xl text-center">LATEST ARTICLES</div>
         
-        <div className="h-30 w-3/4 border border-white border-solid "></div>
-        <Article></Article>
+        {/* <div className="h-30 w-3/4 border border-white border-solid "></div> */}
+        <ArticleView></ArticleView>
         {/* <div className="flex-col space-y-8 h-full w-3/4">
 
 
