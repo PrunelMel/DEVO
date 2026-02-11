@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import ThemeToggle from "../components/ThemeToggle";
 import "./globals.css"
+import { Footer } from "flowbite-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,20 +33,20 @@ export default function RootLayout({
       </head>
       <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        className="min-h-screen overflow-hidden relative">
+        className="min-h-screen relative">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <header className="fixed h-16 top-0 left-0 right-0 px-16 py-8 flex justify-between items-center z-[100] md:px-8 backdrop-blur-sm">
             <div className="font-syne text-3xl font-extrabold text-brand-dark tracking-wider">
               DEVO
             </div>
             <nav className="flex gap-12 items-center md:gap-6">
-              <a href="#home" className="nav-link font-syne font-bold text-brand-dark text-lg transition-all duration-300 relative hover:text-brand-dark md:text-base">
+              <a href="" className="nav-link font-syne font-bold text-brand-dark text-lg transition-all duration-300 relative hover:text-brand-dark md:text-base">
                 Home
               </a>
-              <a href="#articles" className="nav-link font-syne font-bold text-brand-dark text-lg transition-all duration-300 relative hover:text-brand-dark md:text-base">
+              <a href="/articles" className="nav-link font-syne font-bold text-brand-dark text-lg transition-all duration-300 relative hover:text-brand-dark md:text-base">
                 Articles
               </a>
-              <a href="#about" className="nav-link font-syne font-bold text-brand-dark text-lg transition-all duration-300 relative hover:text-brand-dark md:text-base">
+              <a href="/articles/aboutus" className="nav-link font-syne font-bold text-brand-dark text-lg transition-all duration-300 relative hover:text-brand-dark md:text-base">
                 About
               </a>
               <ThemeToggle/>
